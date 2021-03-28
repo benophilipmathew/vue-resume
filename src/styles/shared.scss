@@ -3,53 +3,63 @@
 .bottom-pad { padding-bottom: 30px; }
 .bottom-border { border-bottom: 1px solid #1f820c; }
 
-.section--heading {
-  margin: 16px 0 5px 0;
-  font-size: 20px;
-  font-weight: bold;
-  color: #1f820c;
-  text-transform: uppercase;
+.section {
+  &--heading {
+    margin: 16px 0 5px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1f820c;
+    text-transform: uppercase;
+  }
 }
-.section-item--details {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  margin: 10px 0 0 0;
-  padding-left: 3px;
-}
-.section-item--duration, .section-item--location {
-  margin: 8px 0;
-}
-.section-item--duration {
-  font-size: 17px;
-  font-weight: bold;
-  color: #1f820c;
-}
-.section-item--location {
-  font-size: 14px;
-  color: #a5afa3;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-.section-item--duration > i, .section-item--location > i { font-size: 18px; padding-right: 5px; }
 
-.section-item--content {
-  display: flex;
-  flex-direction: column;
-  margin: 0 0 0 10px;
-  padding: 5px 0 5px 10px;
-  /* border-left: 2px solid #1f820c; */
-  border-radius: 3px;
-}
-.section-item--content > p { margin: 0; color: #353563; }
-.section-item--content-heading {
-  font-size: 18px;
-  font-weight: bold;
-  padding-bottom: 3px;
-}
-.section-item--content-sub-heading-small {
-  padding: 2px 0;
-  font-size: 13px;
-  color: #595977 !important;
-  font-weight: bold;
+.section-item {
+  &--details {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 10px 0 0 0;
+    padding-left: 3px;
+  }
+
+  &--duration, &--location {
+    margin: 8px 0;
+
+    i { font-size: 18px; padding-right: 5px; }
+  }
+
+  &--duration {
+    font-size: 17px;
+    font-weight: bold;
+    color: #1f820c;
+  }
+
+  &--location {
+    font-size: 14px;
+    color: #a5afa3;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  &--content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 10px;
+    padding: 5px 0 5px 10px;
+    /* border-left: 2px solid #1f820c;
+    border-radius: 3px; */
+
+    p { margin: 0; color: #353563; }
+  }
+  &--content-heading {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 3px;
+  }
+  &--content-sub-heading-small {
+    padding: 2px 0;
+    font-size: 13px;
+    color: #595977 !important;
+    font-weight: bold;
+  }
 }

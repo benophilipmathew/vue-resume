@@ -12,13 +12,10 @@ export default {
   components: {
     TechnicalSkillItem
   },
-  computed: {
-    technicalSkillsData() {
-      return benoData && benoData.TechnicalSkills ? benoData.TechnicalSkills : null;
+  setup() {
+    return {
+      technicalSkillsData: benoData.TechnicalSkills
     }
   }
 }
 </script>
-<style>
-
-</style>

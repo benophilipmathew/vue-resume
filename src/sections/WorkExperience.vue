@@ -1,7 +1,7 @@
 <template>
-  <section v-if="ExperienceData" class="bottom-pad">
+  <section v-if="experienceData" class="bottom-pad">
     <p class="section--heading">Experience</p>
-    <WorkExperienceItem v-for="(data, index) in ExperienceData" :key="index" :data="data" />
+    <WorkExperienceItem v-for="(data, index) in experienceData" :key="index" :data="data" />
   </section>
 </template>
 <script>
@@ -12,9 +12,9 @@ export default {
   components: {
     WorkExperienceItem
   },
-  computed: {
-    ExperienceData() {
-      return benoData && benoData.Experience ? benoData.Experience : null;
+  setup() {
+    return {
+      experienceData: benoData.Experience
     }
   }
 }
