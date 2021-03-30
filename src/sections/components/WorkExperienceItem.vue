@@ -11,7 +11,8 @@
       </p>
     </div>
     <div class="section-item--content">
-      <p class="section-item--content-heading" v-html="data.company" />
+      <p class="section-item--content-heading" v-html="data.designation" />
+      <p class="section-item--content-sub-heading-large" v-html="data.company" />
       <ul>
         <li>Worked on Web & Windows Application, WCF,
           WPF, Silverlight, CMS, CRM, MVC, Web API, UI,
@@ -31,7 +32,7 @@ export default {
 </script>
 <style>
 .experience-item-head {
-  width: 180px;
+  width: 190px;
 }
 .section-item--content ul {
   list-style: inside;

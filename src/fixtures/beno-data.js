@@ -10,10 +10,10 @@ const PersonalInfo = {
         mobile: '9975662663',
         email: 'benophilipmathew@hotmail.com'
     },
-    BriefAboutMe: `I am a big bean bag of all the necessary tools and equipment to make things right and just perfect for the next innovations.
-                    I born in Kerala, brought up in Madhya Pradesh, after completing my graduation I started my professional career. 
+    BriefAboutMe: `Software engineer by profession, designer by heart. Trying my best to help save time.
+                    I born in Kerala, brought up in Madhya Pradesh, after completing my graduation, moved to pune to start my professional career. 
                     I am kind of a person who believes, developer is not limited to any technology.
-                    I can work on any technology, if sufficient time has been provided. Love exploring new technologies.`
+                    I can work on any technology, if sufficient time has been provided. I love exploring new technologies.`
 }
 
 const Education = [
@@ -126,16 +126,16 @@ const Experience = [
     },
     {
         duration: { start: 'Sept 2018', end: 'Dec 2018' },
-        position: 'Sr. Software Engineer', company: 'First American India',
+        designation: 'Sr. Software Engineer', company: 'First American India',
         location: 'Bengaluru (KA)'
     },
     {
         duration: { start: 'Dec 2014', end: 'Sept 2018' }, location: 'Bengaluru (KA)',
-        position: 'Sr. Software Developer', company: 'Liventus Technology Services Pvt. Ltd.'
+        designation: 'Sr. Software Developer', company: 'Liventus Technology Services Pvt. Ltd.'
     },
     {
         duration: { start: 'Nov 2012', end: 'Dec 2014' }, location: 'Pune (MH)',
-        position: 'Analyst [.Net Developer]', company: 'eClerx Services Ltd.'
+        designation: 'Analyst [.Net Developer]', company: 'eClerx Services Ltd.'
     }
 ];
 

@@ -55,7 +55,7 @@ export default {
   }
 
   &--professional-title {
-    color: #1f820c;
+    color: $secondary-dark;
     font-size: 17px;
     text-transform: uppercase;
     padding: 8px 0 10px 0;
@@ -64,6 +64,7 @@ export default {
 
   &--details {
     margin-left: 1px;
+    font-family: $font-secondary;
 
     div {
       padding-bottom: 6px;
@@ -71,18 +72,18 @@ export default {
     span {
       text-transform: uppercase;
       font-size: 15px;
-      color: #353563;
+      color: $primary-dark;
 
       a {
         font-size: 15px;
         cursor: pointer;
         text-decoration: none;
         text-transform: lowercase;
-        color: #353563;
+        color: $primary-dark;
       }
 
       i {
-        color: #1f820c;
+        color: $secondary-dark;
         padding: 0 3px 0 10px;
 
         &.fa-mobile { font-weight: bold; }
@@ -98,13 +99,14 @@ export default {
     margin-top: 8px;
 
     span {
-      color: #53654f;
+      font-family: $font-secondary;
+      color: $grey-dark;
       font-size: 15px;
       margin: 5px 0;
       line-height: 25px;
     }
     i {
-      color: #a5afa3;
+      color: $grey-light;
       padding: 5px;
       font-size: 16px;
     }

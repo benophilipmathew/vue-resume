@@ -1,14 +1,21 @@
-
+.root-app-container {
+  width: 670px;
+  font-family: $font-primary;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: left;
+  margin: 40px 18px 18px 18px;
+}
 
 .bottom-pad { padding-bottom: 30px; }
-.bottom-border { border-bottom: 1px solid #1f820c; }
+.bottom-border { border-bottom: 1px solid $secondary-dark; }
 
 .section {
   &--heading {
     margin: 16px 0 5px 0;
     font-size: 20px;
     font-weight: bold;
-    color: #1f820c;
+    color: $secondary-dark;
     text-transform: uppercase;
   }
 }
@@ -31,35 +38,40 @@
   &--duration {
     font-size: 17px;
     font-weight: bold;
-    color: #1f820c;
+    color: $secondary-dark;
   }
 
   &--location {
     font-size: 14px;
-    color: #a5afa3;
+    color: $grey-light;
     text-transform: uppercase;
     font-weight: bold;
   }
 
   &--content {
+    font-family: $font-secondary;
     display: flex;
     flex-direction: column;
     margin: 0 0 0 10px;
     padding: 5px 0 5px 10px;
-    /* border-left: 2px solid #1f820c;
-    border-radius: 3px; */
 
-    p { margin: 0; color: #353563; }
+    p { margin: 0; color: $primary-dark; }
   }
   &--content-heading {
     font-size: 18px;
     font-weight: bold;
     padding-bottom: 3px;
   }
+  &--content-sub-heading-large {
+    padding: 2px 0;
+    font-size: 16px;
+    color: $primary-light !important;
+    font-weight: bold;
+  }
   &--content-sub-heading-small {
     padding: 2px 0;
     font-size: 13px;
-    color: #595977 !important;
+    color: $primary-light !important;
     font-weight: bold;
   }
 }

@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="root-app-container">
     <div class="container is-fluid">
       <personal-info />
       <education />
@@ -25,17 +25,3 @@ export default {
   }
 }
 </script>
-
-<style>
-@import "https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap";
-@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
-
-#app {
-  width: 670px;
-  font-family: 'Ubuntu Condensed', Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: left;
-  margin: 40px 18px 18px 18px;
-}
-</style>

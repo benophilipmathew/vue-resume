@@ -33,12 +33,13 @@ export default {
     }
 
     &--header {
+      font-family: $font-secondary;
       padding: 0 0 8px 0;
       margin: 0 0 10px 0;
       text-transform: uppercase;
       font-size: 16px;
       font-weight: bold;
-      color: #1f820c9e;
+      color: $secondary-light;
     }
 
     &--list {
@@ -58,7 +59,7 @@ export default {
       font-size: 14px;
       font-weight: bold;
       text-transform: uppercase;
-      color: #353563;
+      color: $primary-dark;
     }
 
     &--rating {
@@ -69,7 +70,7 @@ export default {
       li {
         display: inline-block;
         padding: 0 5px 0 0;
-        color: #1f820c;
+        color: $secondary-dark;
         font-size: 10px;
       }
     }

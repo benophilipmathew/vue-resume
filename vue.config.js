@@ -3,7 +3,8 @@ module.exports = {
         loaderOptions: {
             scss: {
                 prependData: `
-                    @import "@/styles/colors.scss";
+                    @import "@/styles/fonts.scss";
+                    @import "@/styles/themes/blue-green.scss";
                     @import "@/styles/shared.scss";
                     `
             }
