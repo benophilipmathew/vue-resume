@@ -6,7 +6,7 @@ const PersonalInfo = {
         currentLocation: 'Bangalore, India',
         nationality: 'Indian',
         DOB: '22-07-1989',
-        totalExperience: '8 yrs 6 months',
+        totalExperience: '8 yrs 5 months',
         mobile: '9975662663',
         email: 'benophilipmathew@hotmail.com',
         handles: {
@@ -16,9 +16,9 @@ const PersonalInfo = {
         }
     },
     BriefAboutMe: `Software engineer by qualification & profession, living with a motive to help save time.
-                    I born in Kerala, brought up in Madhya Pradesh, after completing my graduation, moved to pune to start my professional career. 
-                    I am the kind of a person who believes, developer is not limited to any technology.
-                    I can work on any technology, if sufficient time has been provided. I love exploring new technologies.`,
+                    I born in Kerala, brought up in Madhya Pradesh, after completing my graduation, I moved to pune to start my professional career. 
+                    I am the kind of person who believes, developer is not limited to any technology.
+                    I can work on any technology, if sufficient time has been provided. I like exploring new things.`,
     Languages: [
         'English',
         'Hindi',
