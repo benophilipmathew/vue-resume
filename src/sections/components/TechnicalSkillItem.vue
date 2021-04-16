@@ -11,6 +11,9 @@
         </ul>
       </li>
     </ul>
+    <div v-if="data.break && data.break > 0">
+      <br v-for="i in data.break" :key="i" class="page-break" />
+    </div>
   </div>
 </template>
 <script>

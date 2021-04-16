@@ -13,12 +13,8 @@
     <div class="section-item--content">
       <p class="section-item--content-heading" v-html="data.designation" />
       <p class="section-item--content-sub-heading-large" v-html="data.company" />
-      <ul>
-        <li>Worked on Web & Windows Application, WCF,
-          WPF, Silverlight, CMS, CRM, MVC, Web API, UI,
-          Angular 4</li>
-        <li>Currently working on angular which is a CRM
-          Based Project</li>
+      <ul v-if="data.work && data.work.length > 0">
+        <li v-for="(value, index) in data.work" :key="index" v-html="value" />
       </ul>
     </div>
   </div>
@@ -30,18 +26,20 @@ export default {
   }
 }
 </script>
-<style>
+<style lang="scss">
 .experience-item-head {
-  width: 190px;
+  min-width: 190px;
 }
 .section-item--content ul {
-  list-style: inside;
-  margin: 5px 0 20px 0;
+  list-style: circle;
+  margin: 5px 0 10px 15px;
   color: #436e88;
   padding: 2px 0 5px 0;
-}
-.section-item--content ul > li {
-  font-size: 14px;
-  padding: 3px 0;
+
+  li {
+    font-size: 14px;
+    padding: 5px 0;
+    line-height: 20px;
+  }
 }
 </style>
