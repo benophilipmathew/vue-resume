@@ -6,7 +6,7 @@ const PersonalInfo = {
         currentLocation: 'Bangalore, India',
         nationality: 'Indian',
         DOB: '22-07-1989',
-        totalExperience: '8 yrs 5 months',
+        totalExperience: '9 yrs 7 months',
         mobile: '9975662663',
         email: 'benophilipmathew@hotmail.com',
         handles: {
@@ -50,7 +50,7 @@ const TechnicalSkills = [
             { title: 'Silverlight', rating: 3 },
             { title: 'ASP.Net Core', rating: 4 },
             { title: 'Azure Function', rating: 5 },
-            { title: 'NodeJS', rating: 2 },
+            { title: 'NodeJS', rating: 3 },
             { title: 'MVVM', rating: 3 },
             { title: 'PHP', rating: 1 }
         ],
@@ -83,7 +83,8 @@ const TechnicalSkills = [
             { title: 'MySQL', rating: 2 },
             { title: 'Redis', rating: 3 },
             { title: 'Cosmos DB', rating: 4 },
-            { title: 'Microsoft Storage Table', rating: 5 }
+            { title: 'Microsoft Storage Table', rating: 5 },
+            { title: 'Mongo DB', rating: 2 }
         ],
         break: 0
     },
@@ -132,10 +133,19 @@ const TechnicalSkills = [
 
 const Experience = [
     {
-        duration: { start: 'Dec 2018', end: 'Present' }, location: 'Bengaluru (KA)',
+        duration: { start: 'Sept 2021', end: 'Present' }, location: 'Bengaluru (KA)',
+        designation: 'Sr. Lead Engineer', company: 'Quest Global',
+        work: [
+            'Involve in architecture design & development of Turbine Configuration Management Tool for Windmill',
+            'Developed generic utility nuget package for authentication & logging',
+            'Involved in setting up self-host application'
+        ]
+    },
+    {
+        duration: { start: 'Dec 2018', end: 'Sept 2021' }, location: 'Bengaluru (KA)',
         designation: 'Sr. Software Engineer', company: 'Laerdal Bangalore LLP',
         work: [
-            'Involve in feature development and maintenance of laerdal eCommerce website',
+            'Involved in feature development and maintenance of laerdal eCommerce website',
             'Developed licence generation service for Laerdal virtual product',
             'Developed a generic product image service with transformation capabilities',
             'Involved with setting up CD/CI for the main eCommerce project',

@@ -2,7 +2,7 @@
   <div id="app" class="root-app-container">
     <div class="container is-fluid">
       <personal-info />
-      <education />
+      <education-details />
       <technical-skills />
       <work-experience />
     </div>
@@ -11,7 +11,7 @@
 
 <script>
 import PersonalInfo from "@/sections/PersonalInfo";
-import Education from "@/sections/Education";
+import EducationDetails from "@/sections/EducationDetails";
 import TechnicalSkills from "@/sections/TechnicalSkills";
 import WorkExperience from "@/sections/WorkExperience";
 
@@ -20,7 +20,7 @@ export default {
   components: {
     WorkExperience,
     TechnicalSkills,
-    Education,
+    EducationDetails,
     PersonalInfo
   }
 }
