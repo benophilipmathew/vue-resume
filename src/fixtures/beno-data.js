@@ -1,18 +1,18 @@
 
 const PersonalInfo = {
-    FullName: 'Beno Philip Mathew',
+    FullName: 'Beno P',
     ProfessionalTitle: '.Net Full Stack Engineer',
     PersonalDetails: {
         currentLocation: 'Bangalore, India',
-        nationality: 'Indian',
-        DOB: '22-07-1989',
+        nationality: '',
+        DOB: '',
         totalExperience: '9 yrs 7 months',
-        mobile: '9975662663',
-        email: 'benophilipmathew@hotmail.com',
+        mobile: '',
+        email: '',
         handles: {
-            linkedIn: 'benophilipmathew',
-            facebook: 'benophilipmathew',
-            github: 'benophilipmathew',
+            linkedIn: '',
+            facebook: '',
+            github: '',
         }
     },
     BriefAboutMe: `Software engineer by qualification & profession, living with a motive to help save time.
@@ -54,7 +54,7 @@ const TechnicalSkills = [
             { title: 'MVVM', rating: 3 },
             { title: 'PHP', rating: 1 }
         ],
-        break: 4
+        break: 6
     },
     {
         header: 'Frontend',

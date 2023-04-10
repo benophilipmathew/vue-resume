@@ -4,29 +4,29 @@
     <h2 class="personal-info--professional-title" v-html="personalInfo.ProfessionalTitle" />
     <div class="personal-info--details">
       <div>
-        <span><i class="fa fa-map-marker" aria-hidden="true"></i>{{ personalInfo.PersonalDetails.currentLocation }}</span>
-        <span><i class="fa fa-street-view" aria-hidden="true"></i>{{ personalInfo.PersonalDetails.nationality }}</span>
-        <span><i class="fa fa-info-circle" aria-hidden="true"></i>{{ personalInfo.PersonalDetails.DOB }}</span>
-        <span><i class="fa fa-briefcase" aria-hidden="true"></i>{{ personalInfo.PersonalDetails.totalExperience }}</span>
+        <span v-if="personalInfo.PersonalDetails.currentLocation"><i class="fa fa-map-marker" aria-hidden="true"></i>{{ personalInfo.PersonalDetails.currentLocation }}</span>
+        <span v-if="personalInfo.PersonalDetails.nationality"><i class="fa fa-street-view" aria-hidden="true"></i>{{ personalInfo.PersonalDetails.nationality }}</span>
+        <span v-if="personalInfo.PersonalDetails.DOB"><i class="fa fa-info-circle" aria-hidden="true"></i>{{ personalInfo.PersonalDetails.DOB }}</span>
+        <span v-if="personalInfo.PersonalDetails.totalExperience"><i class="fa fa-briefcase" aria-hidden="true"></i>{{ personalInfo.PersonalDetails.totalExperience }}</span>
       </div>
       <div>
-        <span>
+        <span v-if="personalInfo.PersonalDetails.mobile">
           <i class="fa fa-mobile" aria-hidden="true"></i>
           <a :href="mobileHref">{{ personalInfo.PersonalDetails.mobile }}</a>
         </span>
-        <span>
+        <span v-if="personalInfo.PersonalDetails.email">
           <i class="fa fa-envelope" aria-hidden="true"></i>
           <a :href="emailHref">{{ personalInfo.PersonalDetails.email }}</a>
         </span>
       </div>
       <div>
-        <span class="handle">
+        <span class="handle" v-if="personalInfo.PersonalDetails.handles.linkedIn">
           <a :href="linkedInHref"><i class="fa fa-linkedin" aria-hidden="true"></i>/{{ personalInfo.PersonalDetails.handles.linkedIn }}</a>
         </span>
-        <span class="handle">
+        <span class="handle" v-if="personalInfo.PersonalDetails.handles.github">
           <a :href="githubHref"><i class="fa fa-github" aria-hidden="true"></i>/{{ personalInfo.PersonalDetails.handles.github }}</a>
         </span>
-        <span class="handle">
+        <span class="handle" v-if="personalInfo.PersonalDetails.handles.facebook">
           <a :href="facebookHref"><i class="fa fa-facebook" aria-hidden="true"></i>/{{ personalInfo.PersonalDetails.handles.facebook }}</a>
         </span>
       </div>
