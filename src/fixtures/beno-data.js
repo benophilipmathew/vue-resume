@@ -6,7 +6,7 @@ const PersonalInfo = {
         currentLocation: 'Bangalore, India',
         nationality: 'Indian',
         DOB: '22-07-1989',
-        totalExperience: '9 yrs 7 months',
+        totalExperience: '11 yrs 6 months',
         mobile: '9975662663',
         email: 'benophilipmathew@hotmail.com',
         handles: {
@@ -43,26 +43,34 @@ const TechnicalSkills = [
     {
         header: 'Backend',
         skills: [
-            { title: 'C#', rating: 4 },
-            { title: '.Net', rating: 4 },
-            { title: 'MVC', rating: 4 },
-            { title: 'ASP.Net Web API', rating: 4 },
-            { title: 'Silverlight', rating: 3 },
-            { title: 'ASP.Net Core', rating: 4 },
+            { title: 'C#', rating: 5 },
+            { title: '.Net', rating: 5 },
+            { title: 'ASP.Net Core', rating: 5 },
             { title: 'Azure Function', rating: 5 },
+            { title: '.Net Web API', rating: 5 },
+            { title: 'MVC', rating: 4 },
+            { title: 'Silverlight', rating: 3 },
             { title: 'NodeJS', rating: 3 },
             { title: 'MVVM', rating: 3 },
             { title: 'PHP', rating: 1 }
         ],
-        break: 4
+        break: 0
     },
     {
         header: 'Frontend',
         skills: [
-            { title: 'VueJS', rating: 5 },
-            { title: 'Angular', rating: 4 },
             { title: 'HTML/CSS', rating: 5 },
-            { title: 'jQuery', rating: 4 },
+            { title: 'VueJS', rating: 5 },
+            { title: 'ReactJS', rating: 4 },
+            { title: 'Angular', rating: 4 },
+            { title: 'jQuery', rating: 4 }
+        ],
+        break: 0
+    },
+    {
+        header: 'Mobile',
+        skills: [
+            { title: 'React Native (Expo)', rating: 5 },
             { title: 'Ionic Framework', rating: 2 }
         ],
         break: 0
@@ -70,8 +78,8 @@ const TechnicalSkills = [
     {
         header: 'Desktop',
         skills: [
-            { title: 'C# Winforms', rating: 3 },
             { title: 'C# WPF', rating: 5 },
+            { title: 'C# Winforms', rating: 3 },
             { title: 'Electron', rating: 2 },
         ],
         break: 0
@@ -80,10 +88,10 @@ const TechnicalSkills = [
         header: 'Database',
         skills: [
             { title: 'MSSQL', rating: 5 },
-            { title: 'MySQL', rating: 2 },
-            { title: 'Redis', rating: 3 },
+            { title: 'MySQL', rating: 4 },
             { title: 'Cosmos DB', rating: 4 },
             { title: 'Microsoft Storage Table', rating: 5 },
+            { title: 'Redis', rating: 3 },
             { title: 'Mongo DB', rating: 2 }
         ],
         break: 0
@@ -92,7 +100,7 @@ const TechnicalSkills = [
         header: 'Cloud',
         skills: [
             { title: 'Azure (App Service, Function, CDN, Storage, Cosmos)', rating: 4 },
-            { title: 'Alibaba Cloud (ECS)', rating: 3 }
+            { title: 'Alibaba Cloud (ECS)', rating: 2 }
         ],
         break: 0
     },
@@ -101,6 +109,7 @@ const TechnicalSkills = [
         skills: [
             { title: 'CI/CD Pipelines (Azure Devops, GitHub Action)', rating: 5 },
             { title: 'E2E Automated Testing (Cypress, Puppeteer)', rating: 5 },
+            { title: 'Docker', rating: 3 },
             { title: 'Queues (MQTT, Azure Storage Queue)', rating: 3 },
             { title: 'IIS', rating: 3 },
             { title: 'ARM Templates', rating: 4 },
@@ -127,18 +136,28 @@ const TechnicalSkills = [
             { title: 'MQTT', rating: 3 },
             { title: 'Node mcu - ESP8266', rating: 2 }
         ],
-        break: 0
+        break: 3
     },
 ];
 
 const Experience = [
     {
-        duration: { start: 'Sept 2021', end: 'Present' }, location: 'Bengaluru (KA)',
+        duration: { start: 'Jan 2023', end: 'Present' }, location: 'Bengaluru (KA)',
+        designation: 'Sr. Software Engineer', company: 'Telstra Global Business Services LLP',
+        work: [
+            'Involved in development and maintenance of telstra cloud sight website',
+            'Involved in development and maintenance of cloud based micro-service project',
+            'Involved with maintaining CD/CI for the micro-services project & azure resources'
+        ]
+    },
+    {
+        duration: { start: 'Sept 2021', end: 'Dec 2022' }, location: 'Bengaluru (KA)',
         designation: 'Sr. Lead Engineer', company: 'Quest Global',
         work: [
             'Involve in architecture design & development of Turbine Configuration Management Tool for Windmill',
             'Developed generic utility nuget package for authentication & logging',
-            'Involved in setting up self-host application'
+            'Involved in setting up self-hosted applications for window',
+            'Involved in mentoring team-mates & recruitment'
         ]
     },
     {
