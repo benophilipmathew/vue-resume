@@ -11,7 +11,7 @@ const calculateExperience = (startDate) => {
 
 
 const PersonalInfo = {
-    FullName: 'Beno Mathew',
+    FullName: 'Beno Philip Mathew',
     ProfessionalTitle: '.Net Full Stack Engineer',
     PersonalDetails: {
         currentLocation: 'Bangalore, India',
