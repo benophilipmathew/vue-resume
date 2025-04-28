@@ -1,17 +1,27 @@
 
+const calculateExperience = (startDate) => {
+    const start = new Date(startDate);
+    const now = new Date();
+    const diffYears = now.getFullYear() - start.getFullYear();
+    const diffMonths = now.getMonth() - start.getMonth();
+    const years = diffMonths < 0 ? diffYears - 1 : diffYears;
+    const months = diffMonths < 0 ? 12 + diffMonths : diffMonths;
+    return `${years} yrs ${months} months`;
+};
+
+
 const PersonalInfo = {
-    FullName: 'Beno Philip Mathew',
+    FullName: 'Beno Mathew',
     ProfessionalTitle: '.Net Full Stack Engineer',
     PersonalDetails: {
         currentLocation: 'Bangalore, India',
         nationality: 'Indian',
         DOB: '22-07-1989',
-        totalExperience: '11 yrs 6 months',
+        totalExperience: calculateExperience('19 Nov 2012'),
         mobile: '9975662663',
         email: 'benophilipmathew@hotmail.com',
         handles: {
             linkedIn: 'benophilipmathew',
-            facebook: 'benophilipmathew',
             github: 'benophilipmathew',
         }
     },
@@ -48,11 +58,11 @@ const TechnicalSkills = [
             { title: 'ASP.Net Core', rating: 5 },
             { title: 'Azure Function', rating: 5 },
             { title: '.Net Web API', rating: 5 },
+            { title: 'NodeJS', rating: 3 },
+            { title: 'NestJS', rating: 3 },
             { title: 'MVC', rating: 4 },
             { title: 'Silverlight', rating: 3 },
-            { title: 'NodeJS', rating: 3 },
-            { title: 'MVVM', rating: 3 },
-            { title: 'PHP', rating: 1 }
+            { title: 'MVVM', rating: 3 }
         ],
         break: 0
     },
@@ -61,11 +71,14 @@ const TechnicalSkills = [
         skills: [
             { title: 'HTML/CSS', rating: 5 },
             { title: 'VueJS', rating: 5 },
-            { title: 'ReactJS', rating: 4 },
+            { title: 'ReactJS', rating: 5 },
             { title: 'Angular', rating: 4 },
+            { title: 'SCSS', rating: 4 },
+            { title: 'Tailwind', rating: 3 },
+            { title: 'MUI', rating: 4 },
             { title: 'jQuery', rating: 4 }
         ],
-        break: 0
+        break: 2
     },
     {
         header: 'Mobile',
@@ -79,8 +92,8 @@ const TechnicalSkills = [
         header: 'Desktop',
         skills: [
             { title: 'C# WPF', rating: 5 },
+            { title: 'Electron', rating: 4 },
             { title: 'C# Winforms', rating: 3 },
-            { title: 'Electron', rating: 2 },
         ],
         break: 0
     },
@@ -92,7 +105,9 @@ const TechnicalSkills = [
             { title: 'Cosmos DB', rating: 4 },
             { title: 'Microsoft Storage Table', rating: 5 },
             { title: 'Redis', rating: 3 },
-            { title: 'Mongo DB', rating: 2 }
+            { title: 'Postgres', rating: 3 },
+            { title: 'Mongo DB', rating: 2 },
+            { title: 'Dynamo DB', rating: 1 },
         ],
         break: 0
     },
@@ -100,7 +115,9 @@ const TechnicalSkills = [
         header: 'Cloud',
         skills: [
             { title: 'Azure (App Service, Function, CDN, Storage, Cosmos)', rating: 4 },
-            { title: 'Alibaba Cloud (ECS)', rating: 2 }
+            { title: 'Azure Networking', rating: 3 },
+            { title: 'Alibaba Cloud (ECS)', rating: 2 },
+            { title: 'Cloudflare', rating: 1 }
         ],
         break: 0
     },
@@ -109,25 +126,26 @@ const TechnicalSkills = [
         skills: [
             { title: 'CI/CD Pipelines (Azure Devops, GitHub Action)', rating: 5 },
             { title: 'E2E Automated Testing (Cypress, Puppeteer)', rating: 5 },
-            { title: 'Docker', rating: 3 },
+            { title: 'Docker', rating: 4 },
             { title: 'Queues (MQTT, Azure Storage Queue)', rating: 3 },
-            { title: 'IIS', rating: 3 },
+            { title: 'IIS', rating: 4 },
             { title: 'ARM Templates', rating: 4 },
             { title: 'Sharepoint', rating: 2 }
         ],
         break: 0
     },
     {
-        header: 'CMS/CRM',
+        header: 'CMS/CRM/eCommerce',
         skills: [
             { title: 'EpiServer CMS', rating: 3 },
             { title: 'EpiServer eCommerce', rating: 2 },
+            { title: 'Microsoft Dynamics CRM', rating: 3 },
+            { title: 'Shopify', rating: 3 },
             { title: 'DotNetNuke CMS', rating: 2 },
             { title: 'Ektron CMS', rating: 2 },
-            { title: 'Wordpress CMS', rating: 3 },
-            { title: 'Microsoft Dynamics CRM', rating: 3 },
+            { title: 'Wordpress CMS', rating: 2 },
         ],
-        break: 0
+        break: 2
     },
     {
         header: 'IOT',
@@ -145,9 +163,12 @@ const Experience = [
         duration: { start: 'Jan 2023', end: 'Present' }, location: 'Bengaluru (KA)',
         designation: 'Sr. Software Engineer', company: 'Telstra Global Business Services LLP',
         work: [
+            'Maintaining azure production/development resources with owner role',
+            'Involved in architectural setup for the micro-services project',
             'Involved in development and maintenance of telstra cloud sight website',
-            'Involved in development and maintenance of cloud based micro-service project',
-            'Involved with maintaining CD/CI for the micro-services project & azure resources'
+            'Involved in developement & maintainance of cloud based micro-services for telstra',
+            'Involved in managing production issues and support for all projects & mentoring developers',
+            'Involved with maintaining CD/CI for the micro-services project & azure resources',
         ]
     },
     {
